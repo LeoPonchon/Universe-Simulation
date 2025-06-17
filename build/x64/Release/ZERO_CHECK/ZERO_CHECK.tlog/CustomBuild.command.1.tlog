@@ -1,0 +1,10 @@
+^F:\DOCUMENTS\TRAVAIL\THÈSE FDS\BUILD\CMAKEFILES\5FA54D728CD54B1103F77792BB9DE3E6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/travail/Thèse FDS/src" "-BF:/Documents/travail/Thèse FDS/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "F:/Documents/travail/Thèse FDS/build/Simulation.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
